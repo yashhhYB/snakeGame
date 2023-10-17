@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+}
+
+.body{
+    background: url("C:\Users\yashh\projects\snake game]\wp3906251-snake-game-wallpapers.jpg"); 
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#scoreBox{
+    position: absolute;
+    top: 9px;
+    right: 200px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+}
+
+#hiscoreBox{
+    position: absolute;
+    top: 59px;
+    right: 140px;
+    font-size: 39px;
+    font-weight: bold;
+    font-family: 'New Tegomin', serif;
+}
+
+#board{
+    background: linear-gradient(rgb(12, 12, 12), rgb(30, 30, 29));
+    width: 90vmin;
+    height: 92vmin;
+    border: 2px solid rgb(12, 170, 238);
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+}
+
+.head{
+    background: linear-gradient(rgb(244, 241, 241), rgb(24, 24, 23));
+    border: 2px solid rgb(127, 123, 127); 
+    transform: scale(1.02);
+    border-radius: 100px;
+}
+
+.snake{
+    background-color: rgb(242, 55, 242);
+    border: .25vmin solid rgb(228, 106, 106);
+    border-radius: 100px;
+}
+
+.food{
+    background: linear-gradient(rgb(205, 237, 21), rgb(154, 173, 8));
+    border: .25vmin solid rgb(162, 161, 161);
+    border-radius: 8px;
+}
